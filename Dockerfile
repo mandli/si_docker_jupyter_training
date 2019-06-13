@@ -27,3 +27,5 @@ RUN Rscript -e 'devtools::install_github("usgs-r/nhdplusTools")'
 
 RUN Rscript -e 'devtools::install_github("usgs-r/intersectr")'
 
+# Install numpy, scipy and matplotlib
+RUN pip install scipy matplotlib pandas sympy
